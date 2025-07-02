@@ -1,4 +1,4 @@
-import { renderApp } from "/routing/routing.js";
+import { renderApp } from "./routing/routing.js";
 
 function changeUrl(newPath) {
     history.pushState(null, "", newPath); // URL'yi değiştir

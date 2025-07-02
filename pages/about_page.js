@@ -1,4 +1,4 @@
-import { About } from "/components/about.js";
+import { About } from "../components/about.js";
 
 export function AboutPage() {
     document.getElementById('app').innerHTML = `

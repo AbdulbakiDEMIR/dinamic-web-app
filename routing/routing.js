@@ -1,5 +1,5 @@
-import { routing_data } from "/routing/routing_data.js";
-import { NotFoundPage } from "/pages/404_page_not_found.js";
+import { routing_data } from "../routing/routing_data.js";
+import { NotFoundPage } from "../pages/404_page_not_found.js";
 
 export function renderApp() {
     const page = getParams("page"); // Yeni URL'yi al
