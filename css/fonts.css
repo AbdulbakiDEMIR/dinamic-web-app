@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'LeagueSpartan-Bold';
+    src: url('../fonts/LeagueSpartan-Bold.otf') format('otf');
+    /* Diğer font özellikleri buraya eklenebilir (font-weight, font-style, vs.) */
+}
