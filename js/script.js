@@ -1,4 +1,3 @@
-
 window.scrollToSection = function (event) {
     event.preventDefault();
     const href = event.target.getAttribute("href");
@@ -9,10 +8,6 @@ window.scrollToSection = function (event) {
     }
 };
 
-
-// window.changeUrl = function (url) {
-//     window.location.pathname = url;
-// }
 
 window.getParams = function (paramsName) {
     const search = window.location.search; 
