@@ -1,17 +1,40 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdülbaki DEMİR</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinamic Page</title>
+
+  <!-- Bu script JSON'dan CSS ve JS dosyalarını dinamik yükleyecek -->
+  <script type="module">
+    import config from './config.js';
+
+    // const config = await fetch('/dinamic-web-app/config.json').then(res => res.json());
+    console.log(config);
+    const base = config.basePath ?? '';  
+    // CSS dosyalarını <head> içine ekle
+    config.styles?.forEach(style => {
+      console.log(config.styles);
+
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = base+style.path;
+      document.head.appendChild(link);
+    });
+
+    // JS dosyalarını <body> sonuna ekle
+    config.scripts?.forEach(src => {
+        const script = document.createElement('script');
+        script.type = src.type;
+        script.src = base+src.path;
+        document.body.appendChild(script);
+    });
+  </script>
 </head>
 <body>
-    <div id="app"></div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="module" src="./js/script.js"></script>
-    <script type="module" src="./app.js"></script>
+  <div id="app"></div>
 
+  <!-- jQuery gibi harici bir script gerekiyorsa doğrudan yaz -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
-

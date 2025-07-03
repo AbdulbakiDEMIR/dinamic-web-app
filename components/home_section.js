@@ -7,7 +7,7 @@ export function HomeSection() {
                     <h3 id="name" class="animate-left2">dsadsa</h3>
                     <p id="description" class="animate-left3">asdsa</p>
                 </div>
-                <button onclick="changeUrl('/?page=about')">Go to About</button>
+                <button onclick="changeUrl('?page=about')">Go to About</button>
             </div>
         </section>     
         `;

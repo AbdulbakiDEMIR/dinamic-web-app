@@ -1,7 +1,9 @@
 import { renderApp } from "./routing/routing.js";
+import config from "./config.js"
+
 
 function changeUrl(newPath) {
-    history.pushState(null, "", newPath); // URL'yi değiştir
+    history.pushState(null, "", config.basePath+newPath); // URL'yi değiştir
     renderApp(); // URL değiştikten sonra hemen render et
 }
 window.changeUrl = changeUrl;

@@ -7,7 +7,7 @@ export function About() {
                     <h3 id="name" class="animate-left2">Our Mission</h3>
                     <p id="description" class="animate-left3">To provide the best service possible. </p>
                 </div>
-                <button onclick="changeUrl('/')">Go to About</button>
+                <button onclick="changeUrl('')">Go to About</button>
             </div>
         </section>     
         `;
