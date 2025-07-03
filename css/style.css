@@ -9,3 +9,41 @@ h3{ font-family: 'Open Sans', sans-serif;}
 h4{ font-family: 'Open Sans', sans-serif;}
 h5{ font-family: 'Open Sans', sans-serif;}
 h6{ font-family: 'Open Sans', sans-serif;}
+
+.pages{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    width: 80%;
+    height: 80%;
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .button{
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.4rem;
+    background: #e73535;
+    cursor:pointer;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+#page1{
+    background: #c1c1c1;
+}
+
+#page2{
+    background: #a0f9ff;
+}

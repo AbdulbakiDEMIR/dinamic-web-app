@@ -10,11 +10,9 @@
     import config from './config.js';
 
     // const config = await fetch('/dinamic-web-app/config.json').then(res => res.json());
-    console.log(config);
     const base = config.basePath ?? '';  
     // CSS dosyalarını <head> içine ekle
     config.styles?.forEach(style => {
-      console.log(config.styles);
 
       const link = document.createElement('link');
       link.rel = 'stylesheet';

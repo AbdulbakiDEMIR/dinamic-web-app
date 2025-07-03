@@ -1,13 +1,13 @@
-import { HomePage } from "../pages/home_page.js";
-import { AboutPage } from "../pages/about_page.js";
+import { Page1 } from "../pages/page1_page.js";
+import { Page2 } from "../pages/page2_page.js";
 
 export const routing_data = [
     {
         path:null,
-        page: () => HomePage()
+        page: () => Page1()
     },
     {
-        path: "about",
-        page: () => AboutPage()
+        path: "page2",
+        page: () => Page2()
     }
 ]

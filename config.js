@@ -1,7 +1,7 @@
 // config.js
 export default {
-    // basePath: "/dinamic-web-app/",
-    basePath: "/",
+    basePath: "/dinamic-web-app/",
+    // basePath: "/",
     scripts: [
       { path: "js/script.js", type: "module" },
       { path: "app.js", type: "module" }
