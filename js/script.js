@@ -1,12 +1,14 @@
-import config from "../config.js"
+import {config, pageQueryParameterKey } from "../config.js"
 import { renderApp } from "../routing/routing.js";
 
 
-
-
-window.changeUrl = function (newPath) {
-
-    history.pushState(null, "", config.basePath+newPath); // URL'yi değiştir
+window.changePage = function (newPage) {
+    if(newPage===""){
+        history.pushState(null, "", config.basePath);
+    }
+    else{
+        history.pushState(null, "", config.basePath+"?"+pageQueryParameterKey+"="+newPage); // URL'yi değiştir
+    }
     renderApp(); // URL değiştikten sonra hemen render et
 }
 

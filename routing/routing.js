@@ -1,6 +1,6 @@
 import { routing_data } from "../routing/routing_data.js";
 import { NotFoundPage } from "../pages/404_page_not_found.js";
-
+import { pageQueryParameterKey } from "../config.js";
 function getParams(paramsName) {
     const search = window.location.search; 
 
@@ -10,7 +10,7 @@ function getParams(paramsName) {
 };
 
 export function renderApp() {
-    const page = getParams("page"); // Yeni URL'yi al
+    const page = getParams(pageQueryParameterKey); // Yeni URL'yi al
     const route = routing_data.find(route => route.path === page);
     if (route) {
         route.page(); // İlgili sayfa fonksiyonunu çağırır

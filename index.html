@@ -7,7 +7,7 @@
 
   <!-- Bu script JSON'dan CSS ve JS dosyalarını dinamik yükleyecek -->
   <script type="module">
-    import config from './config.js';
+    import {config} from './config.js';
 
     // const config = await fetch('/dinamic-web-app/config.json').then(res => res.json());
     const base = config.basePath ?? '';  

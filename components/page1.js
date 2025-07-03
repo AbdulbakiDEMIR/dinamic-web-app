@@ -3,7 +3,7 @@ export function PageComponent1() {
         <section class="pages" id="page1">
             <div class="card">
                 <h1>Page1</h1>
-                <button class="button" onclick="changeUrl('?page=page2')">Go to Page2</button>
+                <button class="button" onclick="changePage('page2')">Go to Page2</button>
             </div>
         </section>     
         `;
